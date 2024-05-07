@@ -1,0 +1,43 @@
+site_name: Kodeguiden
+
+plugins:
+  - search:
+  - mkdocs-nav-weight:
+      section_renamed: false
+      index_weight: -10
+      warning: true
+      reverse: false
+      headless_included: false
+
+theme:
+  features:
+    - search.suggest
+    - search.share
+    - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - toc.follow
+    - navigation.footer
+  name: material
+
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CallMeRubb
+      name: Github Profile
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/callmerubb
+      name: Docker Profile
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/
+      name: Meningen at denne ikke skal fynke
+copyright: Copyright © 2023 CallMeRubb
+
+markdown_extensions:
+  - pymdownx.superfences
